@@ -9,5 +9,4 @@ public class PhoenixPlugin extends JavaPlugin {
 	public void onEnable() {
 		Bukkit.getLogger().info("[Phoenix] This plugin/library is property of Lyonix Services.");
 	}
-
 }
