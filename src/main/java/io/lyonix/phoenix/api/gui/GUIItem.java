@@ -1,23 +1,21 @@
 package io.lyonix.phoenix.api.gui;
 
 import io.lyonix.phoenix.api.gui.event.ItemClickEvent;
-import lombok.Getter;
-import lombok.Setter;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 
 public class GUIItem {
 
-	@Getter
 	private int slot;
 
-	@Getter
-	@Setter
-	private ItemStack      item;
+	private ItemStack item;
 
-	@Getter
 	private ItemClickEvent event;
+
+	public ItemClickEvent getEvent() {
+		return event;
+	}
 
 	public GUIItem(int slot, ItemStack item, ItemClickEvent event) {
 		this.slot = slot;
@@ -33,4 +31,15 @@ public class GUIItem {
 		this.event.run((Player) event.getWhoClicked());
 	}
 
+	public ItemStack getItem() {
+		return item;
+	}
+
+	public void setItem(ItemStack item) {
+		this.item = item;
+	}
+
+	public int getSlot() {
+		return slot;
+	}
 }

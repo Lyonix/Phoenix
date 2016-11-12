@@ -3,8 +3,6 @@ package io.lyonix.phoenix.api.storage.database;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import io.lyonix.phoenix.api.Plugin;
-import lombok.Getter;
-import lombok.Setter;
 import org.bukkit.configuration.ConfigurationSection;
 
 import java.sql.Connection;
@@ -16,10 +14,7 @@ public class MySQLHandler {
 	private final Plugin           plugin;
 	private final HikariDataSource dataSource;
 
-	@Getter
-	@Setter
 	private String table;
-	@Getter
 	private String database;
 
 	public MySQLHandler(Plugin plugin, String host, int port, String username, String password, String database, String table) {
@@ -78,4 +73,15 @@ public class MySQLHandler {
 		dataSource.close();
 	}
 
+	public String getTable() {
+		return table;
+	}
+
+	public void setTable(String table) {
+		this.table = table;
+	}
+
+	public String getDatabase() {
+		return database;
+	}
 }

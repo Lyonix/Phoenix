@@ -1,12 +1,13 @@
 package io.lyonix.phoenix.api.storage;
 
-import lombok.Getter;
-
 import java.util.HashMap;
 
 public abstract class DefaultConfiguration {
 
-	@Getter
+	public HashMap<String, Object> getDefaultValues() {
+		return defaultValues;
+	}
+
 	private HashMap<String, Object> defaultValues = new HashMap<>();
 
 	public DefaultConfiguration() {

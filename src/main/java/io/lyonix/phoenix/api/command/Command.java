@@ -1,7 +1,6 @@
 package io.lyonix.phoenix.api.command;
 
 import io.lyonix.phoenix.api.Module;
-import lombok.Getter;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;

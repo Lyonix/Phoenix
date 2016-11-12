@@ -1,9 +1,7 @@
 package io.lyonix.phoenix.api;
 
 import io.lyonix.phoenix.api.command.Command;
-import lombok.Getter;
 import org.bukkit.event.Listener;
-
 import java.util.HashSet;
 
 public class Module {

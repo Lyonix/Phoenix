@@ -1,16 +1,18 @@
 package io.lyonix.phoenix.api.locale;
 
-import lombok.Getter;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
-import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
 public class Message {
 
 	private String key;
-	@Getter
+
+	public String getValue() {
+		return value;
+	}
+
 	private String value;
 
 	public Message(String key, String value) {

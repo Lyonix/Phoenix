@@ -1,7 +1,6 @@
 package io.lyonix.phoenix.api.storage;
 
 import io.lyonix.phoenix.api.Plugin;
-import lombok.Getter;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import java.io.File;
@@ -10,12 +9,11 @@ import java.util.logging.Level;
 
 public class Configuration {
 
-	@Getter
-	protected final String            name;
-	@Getter
-	private final   YamlConfiguration config;
-	private final   File              file;
-	protected       Plugin            plugin;
+	protected final String name;
+
+	private final YamlConfiguration config;
+	private final File file;
+	protected Plugin plugin;
 
 	public Configuration(Plugin plugin, String name) {
 		this.plugin = plugin;
@@ -63,4 +61,11 @@ public class Configuration {
 		}
 	}
 
+	public YamlConfiguration getConfig() {
+		return config;
+	}
+
+	public String getName() {
+		return name;
+	}
 }

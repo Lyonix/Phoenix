@@ -2,7 +2,6 @@ package io.lyonix.phoenix.api;
 
 import io.lyonix.phoenix.api.command.Command;
 import io.lyonix.phoenix.api.debug.DebugLog;
-import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandMap;
 import org.bukkit.event.Listener;
@@ -14,7 +13,6 @@ import java.util.logging.Level;
 
 public class Plugin extends JavaPlugin {
 
-    @Getter
     private HashSet<Module> modules = new HashSet<Module>();
 
     private boolean first = false;
@@ -111,4 +109,7 @@ public class Plugin extends JavaPlugin {
         return getCommandMap();
     }
 
+    public HashSet<Module> getModules() {
+        return modules;
+    }
 }
