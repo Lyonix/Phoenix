@@ -8,22 +8,16 @@ import java.util.HashSet;
 
 public class Module {
 
-	@Getter
 	private String name;
 
-	@Getter
 	private String version;
 
-	@Getter
 	private String author;
 
-	@Getter
 	private String description;
 
-	@Getter
 	private HashSet<Listener> listeners;
 
-	@Getter
 	private HashSet<Command> commands;
 
 	protected Module(String name, String version, String author, String description) {
@@ -64,4 +58,27 @@ public class Module {
 	public void disable() {
 	}
 
+	public String getName() {
+		return name;
+	}
+
+	public String getVersion() {
+		return version;
+	}
+
+	public String getAuthor() {
+		return author;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public HashSet<Listener> getListeners() {
+		return listeners;
+	}
+
+	public HashSet<Command> getCommands() {
+		return commands;
+	}
 }

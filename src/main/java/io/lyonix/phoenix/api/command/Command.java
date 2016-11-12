@@ -12,34 +12,32 @@ public class Command {
 
     private Module module;
 
-    @Getter
+    
     private String name;
 
-    @Getter
     private String description;
 
-    @Getter
+    
     private String usage;
 
-    @Getter
+
     private int minArgs;
 
-    @Getter
     private String permission;
 
-    @Getter
+    
     private boolean playerOnly;
 
-    @Getter
+    
     private String permissionDeniedMessage;
 
-    @Getter
+    
     private String playerOnlyMessage;
 
-    @Getter
+    
     private String notEnoughArgsMessage;
 
-    @Getter
+    
     private CommandAlgorithm algorithm;
 
     public Command(Module module, String name, String description, String usage, int minArgs, String permission, boolean playerOnly, String permissionDeniedMessage, String playerOnlyMessage, String notEnoughArgsMessage, CommandAlgorithm algorithm) {
@@ -86,4 +84,47 @@ public class Command {
 
     }
 
+    public Module getModule() {
+        return module;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getUsage() {
+        return usage;
+    }
+
+    public int getMinArgs() {
+        return minArgs;
+    }
+
+    public String getPermission() {
+        return permission;
+    }
+
+    public boolean isPlayerOnly() {
+        return playerOnly;
+    }
+
+    public String getPermissionDeniedMessage() {
+        return permissionDeniedMessage;
+    }
+
+    public String getPlayerOnlyMessage() {
+        return playerOnlyMessage;
+    }
+
+    public String getNotEnoughArgsMessage() {
+        return notEnoughArgsMessage;
+    }
+
+    public CommandAlgorithm getAlgorithm() {
+        return algorithm;
+    }
 }
