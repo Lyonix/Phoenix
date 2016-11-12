@@ -2,4 +2,4 @@ name: Phoenix
 main: io.lyonix.phoenix.PhoenixPlugin
 version: 1.0.0-SNAPSHOT
 author: Lyonix
-authors: [Boomclaw]
+authors: [Boomclaw, rigbacs, viljosayshi]
